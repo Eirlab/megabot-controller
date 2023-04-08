@@ -1,0 +1,24 @@
+@startuml classdiag
+
+class Leg {
+    {field}
+    -LA[]:LA
+}
+
+class LA {
+    {method}
+    -go_to(float)
+    {field}
+}
+
+class Motor {
+    {field}
+    -NUCLEO
+    -LEG
+    -MOTOR: Verrin ?
+    {method}
+    -go_to_serialized(float)
+}
+
+Leg *-- LA : 3
+Motor *-- LA 

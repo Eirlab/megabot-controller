@@ -6,6 +6,7 @@ authors: A.Hauswald C.Vernant
 date: 2023-09-04
 """
 
+
 class Motor:
     """
     Class representing a motor
@@ -28,3 +29,6 @@ class Motor:
         :param float_position: position to go to
         """
         self.nucleo.send_command([self.leg, self.motor, float_position])
+
+    def __str__(self):
+        return self.motor

@@ -2,17 +2,16 @@
 
 class Leg {
     {field}
-    -motor1
-    -motor2
-    -motor3
-    -la_list=[motor1, motor2, motor3]
+    -LinearActuator: motor1
+    -LinearActuator: motor2
+    -LinearActuator: motor3
 }
 
 class Nucleo {
     {field}
-    -serial_port
-    -baudrate
-    -serial
+    -str: serial_port
+    -str: baudrate
+    -Serial: serial
     {method}
     -send_command(float)
     -read_serial()
@@ -22,14 +21,14 @@ class LinearActuator {
     {method}
     -go_to(float)
     {field}
-    -motor
+    -Motor: motor
 }
 
 class Motor {
     {field}
-    -nucleo
-    -leg
-    -motor
+    -Nucleo: nucleo
+    -str: leg
+    -str: motor
     {method}
     -go_to_serialized(float)
 }

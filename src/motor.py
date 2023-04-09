@@ -1,8 +1,13 @@
 #! /usr/bin/env python3
 
+
 class Motor:
     """
     Class representing a motor
+
+    self.nucleo: nucleo object
+    self.leg: leg number
+    self.motor: motor number
 
     """
 

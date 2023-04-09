@@ -4,6 +4,7 @@ class LinearActuator:
     """
     Class representing a linear actuator
     
+    self.motor: motor object
     """
     def __init__(self, motor):
         self.motor = motor

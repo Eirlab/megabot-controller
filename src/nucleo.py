@@ -7,6 +7,9 @@ class Nucleo:
     """
     Class representing a nucleo
 
+    self.serial: serial object
+    self.serial_port: serial port
+    self.baudrate: baudrate
     """
 
     def __init__(self, serial_port, baudrate):

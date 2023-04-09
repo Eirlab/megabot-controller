@@ -1,16 +1,9 @@
 #! /usr/bin/env python3
 
 class Leg:
-    def __init__(self):
-        pass
-
-    def move(self, x, y, z):
-        """
-        Move the leg to the given position
-
-        :param x: x coordinate
-        :param y: y coordinate
-        :param z: z coordinate
-        :return: None
-        """
-        pass
+    def __init__(self, motor1, motor2, motor3):
+        self.motor1 = motor1
+        self.motor2 = motor2
+        self.motor3 = motor3
+        self.LA = [self.motor1, self.motor2, self.motor3]
+        

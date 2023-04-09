@@ -2,10 +2,17 @@
 
 class Leg {
     {field}
-    -LA[]:LA
+    -LA[]
 }
 
-class LA {
+class nucleo {
+    {field}
+    -serial
+    {method}
+    -send(float)
+}
+
+class LinearActuator {
     {method}
     -go_to(float)
     {field}
@@ -13,12 +20,14 @@ class LA {
 
 class Motor {
     {field}
-    -NUCLEO
-    -LEG
-    -MOTOR: Verrin ?
+    -nucleo
+    -leg
+    -motor
     {method}
     -go_to_serialized(float)
 }
 
-Leg *-- LA : 3
-Motor *-- LA 
+Leg *-- LinearActuator: 3
+Motor *-- LinearActuator 
+
+@enduml

@@ -5,7 +5,7 @@ class Leg {
     -motor1
     -motor2
     -motor3
-    -LA=[motor1, motor2, motor3]
+    -la_list=[motor1, motor2, motor3]
 }
 
 class Nucleo {

@@ -2,6 +2,7 @@
 
 import serial
 
+
 class Nucleo:
     """
     Class representing a nucleo
@@ -21,7 +22,7 @@ class Nucleo:
         """
         hex_command = bytearray(command)
         self.serial.write(hex_command)
-        
+
     def read_serial(self):
         """
         Read the serial port

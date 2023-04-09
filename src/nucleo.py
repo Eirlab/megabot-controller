@@ -1,5 +1,8 @@
 #! /usr/bin/env python3
+"""
+Module containing the nucleo class
 
+"""
 import serial
 
 

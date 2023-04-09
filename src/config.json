@@ -3,29 +3,29 @@
         "leg_1": {
             "motor_1": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_2": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_3": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             }
         },
         "leg_2": {
             "motor_4": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_5": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_6": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             }
         }
     },
@@ -33,29 +33,29 @@
         "leg_3": {
             "motor_7": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_8": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_9": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             }
         },
         "leg_4": {
             "motor_10": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_11": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             },
             "motor_12": {
                 "baudrate": 9600,
-                "port": "COM8"
+                "port": "COM7"
             }
         }
     }

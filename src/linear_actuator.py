@@ -1,4 +1,10 @@
 #! /usr/bin/env python3
+"""
+Module containing the linear actuator class
+
+authors: A.Hauswald C.Vernant
+date: 2023-09-04
+"""
 
 class LinearActuator:
     """

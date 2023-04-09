@@ -2,6 +2,9 @@
 """
 Module containing the nucleo class
 
+authors: A.Hauswald C.Vernant
+date: 2023-09-04
+
 """
 import serial
 

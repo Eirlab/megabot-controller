@@ -2,6 +2,8 @@
 """
 Module containing the leg class
 
+authors: A.Hauswald C.Vernant
+date: 2023-09-04
 """
 
 class Leg:

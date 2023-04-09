@@ -4,7 +4,7 @@ import nucleo as n
 import linear_actuator as la
 import leg as l
 
-with open('config.json', 'r') as file:
+with open('config.json', 'r', encoding="utf-8") as file:
     data = json.load(file)
 
 megabot = []
@@ -12,7 +12,6 @@ megabot = []
 for nucleo in data.values():
     for leg in nucleo.values():
         linear_actuators = []
-
         for linear_actuator in leg.values():
             nucleo = n.Nucleo(linear_actuator['port'], linear_actuator['baudrate'])
             motor = m.Motor(nucleo,str(leg),str(linear_actuator))

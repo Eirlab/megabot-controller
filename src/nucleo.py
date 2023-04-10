@@ -29,8 +29,27 @@ class Nucleo:
 
         :param command: command to send
         """
-        hex_command = bytearray(command)
+        command_int_list=[]
+        leg = int(command[0][4])+48
+        motor = int(command[1][6])+48
+        command_int_list.append(leg)
+        command_int_list.append(motor)
+        for c in str(command[2]):
+            if c != ".":
+                if c == "0":
+                    command_int_list.append(48)
+                    
+                else :
+                    command_int_list.append(int(c)+48)
+            else:
+                command_int_list.append(46)
+        hex_command = bytearray(command_int_list)
+        hex_command.append(0x7e)
+        
+        print("sent: ",hex_command)
         self.serial.write(hex_command)
+        #command=[0x55,0x3a,0x56,0x3a,0x30,0x31,0x32,0x33,0x3a,0x30,0x31,0x32,0x33,0x7e]
+        #self.serial.write(bytearray(command))
 
     def read_serial(self):
         """
@@ -39,4 +58,5 @@ class Nucleo:
         :return: response
         """
         response = self.serial.read_all()
+        print("received: ", response.decode())
         return response

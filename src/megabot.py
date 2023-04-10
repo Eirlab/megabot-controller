@@ -3,6 +3,7 @@ import leg
 import linear_actuator
 import motor
 import nucleo
+import time
 
 with open("config.json", "r", encoding="utf-8") as file:
     data = json.load(file)
@@ -24,4 +25,13 @@ for nucleos in data.values():
                 leg.Leg(linear_actuators[0], linear_actuators[1], linear_actuators[2])
             )
 
-print(megabot[0].motor1.motor)
+
+"""
+    Example of use of the megabot class  
+    
+    megabot[0].motor2.go_to(100.5) 
+    megabot[0].motor1.motor.nucleo.read_serial()
+    
+"""
+megabot[0].motor2.go_to(100.5)
+megabot[0].motor1.motor.nucleo.read_serial()

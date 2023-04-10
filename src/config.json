@@ -1,7 +1,7 @@
 {
   "nucleo_1": {
     "baudrate": 9600,
-    "port": "COM8",
+    "port": "COM7",
     "leg_1": [
       "motor_1",
       "motor_2",
